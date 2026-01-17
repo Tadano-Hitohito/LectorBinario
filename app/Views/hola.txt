@@ -1,0 +1,57 @@
+Este proyecto implementa una aplicación web en PHP/CodeIgniter que aplica operadores booleanos (AND, OR, XOR, NOT) al procesamiento de archivos ROM de Game Boy Advance/Color. El sistema funciona como un procesador especializado que utiliza lógica digital para analizar la estructura binaria de las ROMs, identificar secuencias de texto mediante técnicas de enmascaramiento, y facilitar su extracción para traducción. Desarrollado con CodeIgniter, la herramienta incluye un editor hexadecimal interactivo en el navegador, visualizador de operaciones booleanas en tiempo real, y algoritmos optimizados para búsqueda de patrones. El proyecto demuestra la aplicación práctica de álgebra booleana en problemas de ingeniería inversa, ofreciendo una solución accesible desde cualquier navegador web.
+
+ejemplo de una estrutura
+
+puedes hacer una basica para empezar Documentacion PHP binario
+boolean-rom-processor/
+├── app/
+│   ├── Config/                 # Configuraciones
+│   ├── Controllers/
+│   │   ├── HomeController.php
+│   │   ├── ROMController.php   # Controlador principal
+│   │   └── BooleanController.php
+│   ├── Models/
+│   │   ├── BooleanModel.php    # Modelo procesador
+│   │   ├── ROMModel.php        # Modelo archivos
+│   │   └── AnalysisModel.php   # Modelo análisis
+│   ├── Libraries/
+│   │   └── BooleanProcessor.php # Biblioteca núcleo
+│   ├── Helpers/
+│   │   └── binary_helper.php   # Funciones helper
+│   └── Views/
+│       ├── home.php
+│       ├── upload.php          # Subida ROMs
+│       ├── hex_editor.php      # Editor hexadecimal
+│       ├── analysis.php        # Análisis resultados
+│       └── boolean_tools.php   # Herramientas booleanas
+├── public/
+│   ├── assets/
+│   │   ├── css/
+│   │   ├── js/
+│   │   └── uploads/           # ROMs subidas temporalmente
+│   └── index.php              # Punto de entrada
+├── tests/                     # Pruebas PHPUnit
+├── writable/                 # Archivos temporales
+└── .env                      # Variables entorno
+dame algo como esta estrutura pero a tu estilo pues
+
+hola aqui va la estrutura del proyecto actual :
+
+Proyecto_Actual/
+├── app/
+│   ├── Config/
+│   │   └── Routes.php          # Rutas definidas (Login, AnalizarRoms)
+│   ├── Controllers/
+│   │   ├── AnalizarRoms.php    # Lógica de subida y vista de ROMs
+│   │   ├── LoginController.php # Autenticación (Usuarios fijos en código)
+│   │   ├── Home.php            # Controlador por defecto
+│   └── Views/
+│       ├── analizar_roms.php   # Interfaz principal con subida de archivos
+│       ├── login.php           # Formulario de acceso
+│       └── hola.txt            # Archivo de estructura
+├── public/
+│   └── css/                    # Estilos (app.css)
+├── writable/
+│   └── uploads/
+│       └── roms/               # Carpeta destino de archivos subidos
+└── notas.txt                   # Lista de usuarios y contraseñas (Raíz del proyecto)
